@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for i in course_program %}
+Курс: {{ i.course_name }} <br>
+Тема урока: {{i.tema_uroka }} <br>
+Материалы: {{ i.opisaniye_temi }} <br>
+
+{% endfor %}
+
+</body>
+</html>

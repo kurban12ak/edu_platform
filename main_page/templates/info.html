@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Курсы</title>
+</head>
+<body>
+
+Наименование курса: {{ Course.course_name }} <br><hr>
+Цена: {{ Course.course_price }} <br><hr>
+Продолжительность: {{Course.course_period}} <br><hr>
+Информация: {{Course.course_description}} <br><hr>
+
+
+<form method="post" action="/add_course/{{ Course }}">
+    {% csrf_token %}
+
+    <button> Приобрести курс </button>
+</form>
+
+
+</body>
+</html>

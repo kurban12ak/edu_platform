@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Категории</title>
+</head>
+<body>
+
+Категория: {{ category }}<hr>
+
+Курсы: {% for i in courses %} <a href="/courses/{{ i }}">{{ i }}</a>
+
+{% endfor %}
+
+</body>
+</html>
